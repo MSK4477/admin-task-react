@@ -1,0 +1,64 @@
+.content{
+    position: relative;
+    top: 86px;
+    left: 230px;
+    width: calc(100% - 230px);
+    height:calc(100vh + 100vh);
+    background-color: #f8f9fc;
+
+}
+@media screen and (max-width: 768px){
+  .content{
+    position: relative;
+  top: 86;
+  left: 100px;
+    width: calc( 100%  - 100px );
+    
+  }
+}
+.container {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    min-height: 400px;
+    margin: 16px;
+    background-color: #ffffff;
+  }
+  
+  .header {
+    background-color: #e7e1e1;
+    padding: 16px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .Annual{
+    background-color: #ffffff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    min-height: 400px;
+    margin: 16px;
+
+  }
+  .illustration{
+    background-color: #ffffff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    min-height: 400px;
+    margin: 16px;
+
+  }
+  .LineChart{
+    position: relative;
+    top: 20px;
+    padding: 10px;
+
+  }
+  .DoughnutChart{
+    position: relative;
+    top: 30px;
+    padding: 10px;
+
+  }

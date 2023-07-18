@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import sideStyles from "./sideBar.module.css";
 
-const Sidebar = () => {
+const Sidebar = ({ sidebarVisible }) => {
   const [drop, setDrop] = useState(false);
   const [drop2, setDrop2] = useState(false);
   const [drop3, setDrop3] = useState(false);
@@ -23,12 +23,14 @@ const Sidebar = () => {
     setDrop(false);
     setDrop2(false);
   };
+ 
+  
   
 
   return (
 
-
-        <div className={sideStyles.containers}>
+   
+<div className={`${sideStyles.containers} ${sidebarVisible ? sideStyles.container2 : ""}`}>
       <div className={sideStyles.SbAdmin2}>
         <ul style={{ textAlign: "left" }}>
           <a href="#SbAdmin2" className={sideStyles.link}>
@@ -143,25 +145,25 @@ const Sidebar = () => {
         </ul>
       ) : (
         <ul onClick={handleDropDown}>
-          <a href="#components" style={{ textDecoration: "none" }} className={sideStyles.components}>
-            <li>
-              <i class="fas fa-fw fa-cog"></i>
-              <span>Components</span>&nbsp;&nbsp;
-              <span>
-                <i
-                  class="fa-solid fa-caret-down"
-                  style={{
-                    color: "#c1c1c3",
-                    position: "relative",
-                    top: "4px",
-                    left: "60px",
-                    transform: "rotate(270deg)",
-                  }}
-                ></i>
-              </span>
-            </li>
-          </a>
-        </ul>
+        <a href="#Components" style={{ textDecoration: "none" }} className={sideStyles.components}>
+          <li>
+          <i class="fas fa-fw fa-cog"></i>     
+                 <span >Component</span>&nbsp;&nbsp;
+            <span>
+              <i
+                class="fa-solid fa-caret-down"
+                style={{
+                  color: "#c1c1c3",
+                  position: "relative",
+                  top: "4px",
+                  left: "73px",
+                  transform: "rotate(270deg)",
+                }}
+              ></i>
+            </span>
+          </li>
+        </a>
+      </ul>
       )}
 
       {/* DROPDOWN 2 */}
@@ -169,7 +171,8 @@ const Sidebar = () => {
         <ul onClick={handleDropDown2}>
           <a href="#Utilities" style={{ textDecoration: "none", height: "250px" }} className={sideStyles.Utilities}>
             <li>
-              <i class="fas fa-fw fa-wrench"></i>
+              <div className={sideStyles.utIcons}>
+              <i class="fas fa-fw fa-wrench" ></i>
               <span>Utilities</span>&nbsp;&nbsp;
               <span>
                 <i
@@ -182,6 +185,9 @@ const Sidebar = () => {
                   }}
                 ></i>
               </span>
+
+              </div>
+              
               <div className={sideStyles.drop2}>
                 <ul>
                  
@@ -423,7 +429,7 @@ const Sidebar = () => {
                     color: "#c1c1c3",
                     position: "relative",
                     top: "4px",
-                    left: "98px",
+                    left: "110px",
                     transform: "rotate(270deg)",
                   }}
                 ></i>
