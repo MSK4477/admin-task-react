@@ -42,7 +42,7 @@ const Header = ({toggleSidebar}) => {
                          paddingLeft: '20px',
                             
                             }} className={headerStyles.dougles2}>Douglas McGee</span> &nbsp; &nbsp; 
-                                <img  style={{width:"40px"}} src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_profile.svg"/>
+                                <img  style={{width:"40px"}} src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_profile.svg" alt="profile"/>
                             </a>
                            
                         </div>
