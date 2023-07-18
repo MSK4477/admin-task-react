@@ -223,25 +223,29 @@ const Content = () => {
 
 
 <div className="col-lg-6 mb-4">
-  <div style={{boxShadow:"1px 1px 1px 1px #ccc"}}>
-    <div style={{borderBottom:"1px solid #ccc",paddingBottom:"18px",paddingLeft:"5px",paddingTop:"5px",display:"flex", justifyContent:"flex-start",alignItems:"center"}}>
-      <h6 style={{fontWeight:"bold", color:"#007bff"}}>Illustrations</h6>
+  <div style={{border:"1px solid #ccc",backgroundColor:"#ffffff" ,borderRadius:"6px",boxShadow:"0px  4px 6px  rgba(0, 0, 0, 0.1)"}}>
+   
+  <div style={{padding:"16px",backgroundColor:"#f7f7f7", fontWeight:"bold", color:"#007bff", borderBottom:"2px solid #f7f7f7"}}>
+    Illustration
     </div>
-    <div style={{padding:"10px"}}>
-      <div className="text-center">
-        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: "25rem" }} src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_posting_photo.svg"  alt="..." />
+ 
+    <div style={{textAlign:"center", paddingTop:"20px"}}> 
+    <img  style={{ width: "23rem", }} src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_posting_photo.svg"  alt="..." />
+    </div>
+    <div style={{lineHeight:"1.5",verticalAlign:"middle",padding:"20px"}}>
+      <p>Add some quality, svg illustrations to your project courtesy of unDraw, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
+    </div>
+    <div style={{padding:"20px"}}>
+      <a href="#boot">Browse Illustrations on unDraw →</a>
       </div>
-      <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
-      <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw →</a>
+  </div>
+  <div style={{border:"1px solid #ccc",backgroundColor:"#ffffff" ,borderRadius:"6px",boxShadow:"0px  4px 6px  rgba(0, 0, 0, 0.1)",marginTop:"30px"}}>
+  <div style={{padding:"16px",backgroundColor:"#f7f7f7", fontWeight:"bold", color:"#007bff", borderBottom:"2px solid #f7f7f7"}}>
+      <h6 >Development Approach</h6>
     </div>
-    </div>
-  <div className="card shadow mb-4" style={{marginTop:"20px"}}>
-    <div className="card-header py-3">
-      <h6 style={{fontWeight:"bold", color:"#007bff"}}>Development Approach</h6>
-    </div>
-    <div style={{padding:"10px"}}>
-      <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classNamees in order to reduce CSS bloat and poor page performance. Custom CSS classNamees are used to create custom components and custom utility classNamees.</p>
-      <p className="mb-0">Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classNamees.</p>
+    <div style={{lineHeight:"1.5",verticalAlign:"middle",padding:"20px"}}>
+      <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.</p>
+      <p className="mb-0">Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
     </div>
   </div>
 </div>
