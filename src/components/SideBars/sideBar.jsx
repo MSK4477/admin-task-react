@@ -85,11 +85,11 @@ const Sidebar = ({ sidebarVisible }) => {
         <ul onClick={handleDropDown}>
           <a href="#components" style={{ textDecoration: "none" }} className={sideStyles.components}>
             <li>
-              <i class="fas fa-fw fa-cog"></i>
+              <i className="fas fa-fw fa-cog"></i>
               <span>Components</span>&nbsp;&nbsp;
               <span>
                 <i
-                  class="fa-solid fa-caret-down"
+                  className="fa-solid fa-caret-down"
                   style={{
                     color: "#c1c1c3",
                     position: "relative",
@@ -147,11 +147,11 @@ const Sidebar = ({ sidebarVisible }) => {
         <ul onClick={handleDropDown}>
         <a href="#Components" style={{ textDecoration: "none" }} className={sideStyles.components}>
           <li>
-          <i class="fas fa-fw fa-cog"></i>     
+          <i className="fas fa-fw fa-cog"></i>     
                  <span >Component</span>&nbsp;&nbsp;
             <span>
               <i
-                class="fa-solid fa-caret-down"
+                className="fa-solid fa-caret-down"
                 style={{
                   color: "#c1c1c3",
                   position: "relative",
@@ -172,11 +172,11 @@ const Sidebar = ({ sidebarVisible }) => {
           <a href="#Utilities" style={{ textDecoration: "none", height: "250px" }} className={sideStyles.Utilities}>
             <li>
               <div className={sideStyles.utIcons}>
-              <i class="fas fa-fw fa-wrench" ></i>
+              <i className="fas fa-fw fa-wrench" ></i>
               <span>Utilities</span>&nbsp;&nbsp;
               <span>
                 <i
-                  class="fa-solid fa-caret-down"
+                  className="fa-solid fa-caret-down"
                   style={{
                     color: "#c1c1c3",
                     position: "relative",
@@ -264,11 +264,11 @@ const Sidebar = ({ sidebarVisible }) => {
         <ul onClick={handleDropDown2}>
           <a href="#Utilities" style={{ textDecoration: "none" }} className={sideStyles.Utilities}>
             <li>
-              <i class="fas fa-fw fa-wrench"></i>
+              <i className="fas fa-fw fa-wrench"></i>
               <span>Utilities</span>&nbsp;&nbsp;
               <span>
                 <i
-                  class="fa-solid fa-caret-down"
+                  className="fa-solid fa-caret-down"
                   style={{
                     color: "#c1c1c3",
                     position: "relative",
@@ -302,11 +302,11 @@ const Sidebar = ({ sidebarVisible }) => {
         <ul onClick={handleDropDown3}>
           <a href="#Utilities" style={{ textDecoration: "none", height: "250px",color:"#c1c1c3" }} className={sideStyles.pages}>
             <li>
-              <i class="fas fa-fw fa-folder"></i>
+              <i className="fas fa-fw fa-folder"></i>
               <span>Pages</span>&nbsp;&nbsp;
               <span>
                 <i
-                  class="fa-solid fa-caret-down"
+                  className="fa-solid fa-caret-down"
                   style={{
                     color: "#c1c1c3",
                     position: "relative",
@@ -420,11 +420,11 @@ const Sidebar = ({ sidebarVisible }) => {
         <ul onClick={handleDropDown3}>
           <a href="#Utilities" style={{ textDecoration: "none" }} className={sideStyles.pages}>
             <li>
-              <i class="fas fa-fw fa-folder"></i>
+              <i className="fas fa-fw fa-folder"></i>
               <span>Pages</span>&nbsp;&nbsp;
               <span>
                 <i
-                  class="fa-solid fa-caret-down"
+                  className="fa-solid fa-caret-down"
                   style={{
                     color: "#c1c1c3",
                     position: "relative",
@@ -442,7 +442,7 @@ const Sidebar = ({ sidebarVisible }) => {
 <a href="#Charts" style={{ textDecoration: "none" }} className={`${sideStyles.chart} ${drop3 && sideStyles.charts }`}>
 
             <li>
-              <i class="fas fa-chart-area"></i>
+              <i className="fas fa-chart-area"></i>
               <span >Charts</span>&nbsp;&nbsp;
              
             </li>
@@ -452,7 +452,7 @@ const Sidebar = ({ sidebarVisible }) => {
 <a href="#Tables" style={{ textDecoration: "none" }} className={sideStyles.table}>
 
             <li>
-              <i class="fas fa-table"></i>
+              <i className="fas fa-table"></i>
               <span >Tables</span>&nbsp;&nbsp;
              
             </li>

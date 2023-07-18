@@ -10,7 +10,7 @@ const Header = ({toggleSidebar}) => {
       
                         <div className={headerStyles.search}>
                             <div className={headerStyles.bar} onClick={toggleSidebar}>
-                            <i class="fa fa-bars"></i>
+                            <i className="fa fa-bars"></i>
                             </div>
                             <input className={headerStyles.searchInput}  type="text" placeholder="Search for..."/>
                             <span className={headerStyles.searchBtn}><button className='btn btn-primary'  type="button">
@@ -22,16 +22,16 @@ const Header = ({toggleSidebar}) => {
                         <div className={headerStyles.sideIcon}>
                         <div className={headerStyles.sideIcons}>
                             <a href="#">
-                                <i class="fas fa-bell fa-fw" style={{position:"relative", right:"20px"}}></i>
-                                {/* <sup class="badge badge-danger badge-counter" style={{fontSize:"8px",marginBottom:"10px"}}>3+</sup> */}
-                                <span class="badge badge-danger badge-counter" style={{fontSize:"8px", position:"relative", right:"27px", bottom:"10px"}}>3+</span>
+                                <i className="fas fa-bell fa-fw" style={{position:"relative", right:"20px"}}></i>
+                                {/* <sup className="badge badge-danger badge-counter" style={{fontSize:"8px",marginBottom:"10px"}}>3+</sup> */}
+                                <span className="badge badge-danger badge-counter" style={{fontSize:"8px", position:"relative", right:"27px", bottom:"10px"}}>3+</span>
 
                             </a>
                            
                        
                             <a  href="#" >
-                                <i class="fas fa-envelope fa-fw" ></i>
-                                <span class="badge badge-danger badge-counter" style={{fontSize:"8px", position:"relative", right:"7px", bottom:"10px"}}>7</span>
+                                <i className="fas fa-envelope fa-fw" ></i>
+                                <span className="badge badge-danger badge-counter" style={{fontSize:"8px", position:"relative", right:"7px", bottom:"10px"}}>7</span>
                             </a>
                            
                             </div>
