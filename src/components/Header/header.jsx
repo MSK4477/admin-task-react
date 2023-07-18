@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import headerStyles from "./header.module.css"
 
 const Header = ({toggleSidebar}) => {
@@ -21,7 +20,7 @@ const Header = ({toggleSidebar}) => {
                         </div>
                         <div className={headerStyles.sideIcon}>
                         <div className={headerStyles.sideIcons}>
-                            <a href="#">
+                            <a href="#bell">
                                 <i className="fas fa-bell fa-fw" style={{position:"relative", right:"20px"}}></i>
                                 {/* <sup className="badge badge-danger badge-counter" style={{fontSize:"8px",marginBottom:"10px"}}>3+</sup> */}
                                 <span className="badge badge-danger badge-counter" style={{fontSize:"8px", position:"relative", right:"27px", bottom:"10px"}}>3+</span>
@@ -29,7 +28,7 @@ const Header = ({toggleSidebar}) => {
                             </a>
                            
                        
-                            <a  href="#" >
+                            <a  href="#envlope" >
                                 <i className="fas fa-envelope fa-fw" ></i>
                                 <span className="badge badge-danger badge-counter" style={{fontSize:"8px", position:"relative", right:"7px", bottom:"10px"}}>7</span>
                             </a>
@@ -38,7 +37,7 @@ const Header = ({toggleSidebar}) => {
 
 
                         <div className={headerStyles.dougles}>
-                            <a  href="#" >
+                            <a  href="#dougles" >
                                 <span style={{
                          paddingLeft: '20px',
                             
