@@ -13,14 +13,9 @@
   top: 0;
   left: 0;
   width: 230px;
-  height: calc(100vh + 170vh);
+  height: calc(100vh + 300vh);
 }
-@media screen and (max-width:1014px){
-  .containers{
-  height: 100vh + 100% ;
-  
-  }
-}
+
 
 
 .sidebarItem i{
