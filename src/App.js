@@ -10,6 +10,8 @@ function App() {
 
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
+    setArrow(false);
+
   };
   const handleArrow = () => {
     setArrow(!arrow);
