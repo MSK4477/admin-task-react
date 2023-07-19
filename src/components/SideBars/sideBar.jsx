@@ -26,7 +26,6 @@ const Sidebar = ({ isVisible, handleArrow, arrow}) => {
   };
  
  
-  console.log(`Line no:27 in sideBar is: ${isVisible}`)
   
 
   return (

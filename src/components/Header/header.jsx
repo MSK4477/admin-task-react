@@ -3,7 +3,6 @@ import headerStyles from "./header.module.css"
 
 const Header = ({toggleSidebar, isVisible, arrow}) => {
 
-    console.log(`from header: ${isVisible}`)
     return (
       <nav className={`${headerStyles .whiteBg} ${isVisible ? headerStyles .whiteBg2 : ""} ${arrow ? headerStyles.whiteBg3 : ""}`}> 
       

@@ -10,11 +10,9 @@ function App() {
 
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
-    console.log(`sideBarIs:  ${sidebarVisible}` )
   };
   const handleArrow = () => {
     setArrow(!arrow);
-    console.log(arrow);
   }
   return (
     <div className="App">
