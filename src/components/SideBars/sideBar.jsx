@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import sideStyles from "./sideBar.module.css";
 
-const Sidebar = ({ sidebarVisible }) => {
+const Sidebar = ({ isVisible, handleArrow, arrow}) => {
   const [drop, setDrop] = useState(false);
   const [drop2, setDrop2] = useState(false);
   const [drop3, setDrop3] = useState(false);
+
 
   const handleDropDown = () => {
     setDrop(!drop);
@@ -24,15 +25,16 @@ const Sidebar = ({ sidebarVisible }) => {
     setDrop2(false);
   };
  
-  
+ 
+  console.log(`Line no:27 in sideBar is: ${isVisible}`)
   
 
   return (
 
    
-<div className={`${sideStyles.containers} ${sidebarVisible ? sideStyles.container2 : ""}`}>
+<div className={`${sideStyles.containers} ${isVisible ? sideStyles.container2 : ""}${arrow ? sideStyles.container3 : ""}`}>
       <div className={sideStyles.SbAdmin2}>
-        <ul style={{ textAlign: "left" }}>
+        <ul style={{ textAlign: "left" }}>  
           <a href="#SbAdmin2" className={sideStyles.link}>
             <li className={sideStyles.sidebarItem}>
               <i
@@ -458,6 +460,20 @@ const Sidebar = ({ sidebarVisible }) => {
             </li>
           </a>
         </ul>
+         <div  className={sideStyles.arrow} style={{position:"relative",top:"180px",left:"20%"}}>
+        <button  onClick={handleArrow}  className="rounded-circle border-0"  style={{width:"4rem",height:"4rem",backgroundColor:"#6886de"}}> <i className={arrow ? "fa-solid fa-arrow-left" :"fa-solid fa-arrow-right"} style={{color: "#ccc"}}></i></button>
+        </div>
+      
+       
+        <div  style={ arrow ? {display:"none"} :{ position:"relative" , top:"220px",left:"10px",borderRadius:"8px", padding:"10px",backgroundColor:"#3a5cbf",width:"200px"}}>
+          <div className={sideStyles.rocket}>
+          <img style={{width:"4rem", position:"relative",  left:"4rem"}}  src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_rocket.svg" alt="..."/>
+                        <p style={{pdding:"30px",textAlign:"center",color:"#ccc"}}><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>          
+
+                <a    style={{position:"relative", left:"30px"}}className="btn btn-success" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a> 
+          </div>
+          
+            </div>
     </div>
     
   );

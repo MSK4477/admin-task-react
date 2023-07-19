@@ -1,19 +1,19 @@
+import { useState } from "react";
 import headerStyles from "./header.module.css"
 
-const Header = ({toggleSidebar}) => {
+const Header = ({toggleSidebar, isVisible, arrow}) => {
 
-    
-
+    console.log(`from header: ${isVisible}`)
     return (
-      <nav className={headerStyles.whiteBg}> 
+      <nav className={`${headerStyles .whiteBg} ${isVisible ? headerStyles .whiteBg2 : ""} ${arrow ? headerStyles.whiteBg3 : ""}`}> 
       
                         <div className={headerStyles.search}>
                             <div className={headerStyles.bar} onClick={toggleSidebar}>
-                            <i className="fa fa-bars"></i>
+                            <i  style={isVisible ? {position:"relative", right:"80px"} : {position:"relative"}}className="fa fa-bars"></i>
                             </div>
-                            <input className={headerStyles.searchInput}  type="text" placeholder="Search for..."/>
-                            <span className={headerStyles.searchBtn}><button className='btn btn-primary'  type="button">
-                                    <i className="fas fa-search fa-sm"></i>
+                            <input className={`${headerStyles.searchInput}`}  type="text" placeholder="Search for..."/>
+                            <span className={`${headerStyles.searchBtn} `} ><button   type="button">
+                                    <i className="fas fa-search fa-sm" style={{color:"#ccc"}}></i>
                                 </button></span>
                                 <div>
                             </div>

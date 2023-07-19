@@ -5,8 +5,27 @@
     width: calc(100% - 230px);
     height:calc(100vh + 100vh);
     background-color: #f8f9fc;
+    transition: 0.3s ease-in-out !important;
 
 }
+.content2{
+  position: relative !important;
+  top: 86px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: calc(100vh + 100vh);
+transition: 0.3s ease-in-out !important;
+}
+.content3{
+  position: relative !important;
+  top: 86px !important;
+  left: 100px !important;
+  width: calc(100% - 100px) !important;
+  height: calc(100vh + 100vh) !important;
+transition: 0.3s ease-in-out !important;
+}
+
+
 @media screen and (max-width: 768px){
   .content{
     position: relative;

@@ -6,17 +6,34 @@ import Content from "./components/content/content";
 function App() {
 
   const [sidebarVisible, setSidebarVisible] = useState(false);
+  const [arrow, setArrow] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
     console.log(`sideBarIs:  ${sidebarVisible}` )
   };
+  const handleArrow = () => {
+    setArrow(!arrow);
+    console.log(arrow);
+  }
   return (
     <div className="App">
-        <Sidebar isVisible={sidebarVisible} />
-        <Header toggleSidebar={toggleSidebar}/>
+        <Sidebar isVisible={sidebarVisible}
+         handleArrow={handleArrow}
+         arrow={arrow}
+
+        />
+        <Header toggleSidebar={toggleSidebar}
+        isVisible={sidebarVisible}
+        arrow={arrow}
+
+        />
      
-        <Content />
+        <Content 
+        isVisible={sidebarVisible}
+        arrow={arrow}
+
+        />
        </div>
         
   );

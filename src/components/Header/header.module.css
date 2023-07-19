@@ -10,6 +10,22 @@
     box-shadow: 0px 4px 0px 0px rgba(166, 162, 162, 0.3);
 
   }
+  .whiteBg2{
+    position: absolute !important;
+    top: 0 !important;
+    left: 100px !important;
+    width:calc( 100%  - 100px ) !important;
+    transition: 0.3s ease-in-out !important;
+    
+  }
+  .whiteBg3{
+    position: absolute !important;
+    top: 0 !important;
+    left: 100px !important;
+    width:calc( 100%  - 100px ) !important;
+    transition: 0.3s ease-in-out !important;
+
+  }
   .bar{
     display: none;
   }
@@ -55,7 +71,10 @@
     box-shadow: 0px 0px 2px 3px rgba(191, 40, 40, 0.3);
 
   }
+
 .searchBtn button{
+  background-color: #1077ec;
+
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -111,12 +130,15 @@ flex-wrap: wrap;
   .searchInput {
    display: none;
 }
-.searchBtn button{
 
+.searchBtn button{
+background-color: #ffffff;
   position: relative;
-  left: 50px;
+  left: 120px;
 }
+
 }
+
 
 
    

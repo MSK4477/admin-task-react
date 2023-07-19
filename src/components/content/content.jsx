@@ -2,9 +2,9 @@ import React from "react";
 import contentStyle from "./content.module.css";
 import LineChart from "../Charts/Line"
 import DoughnutChart from "../Charts/Doughnut"
-const Content = () => {
+const Content = ({isVisible,arrow}) => {
   return (
-    <div className={contentStyle.content}>
+    <div className={`${contentStyle .content} ${isVisible ? contentStyle.content2 : ""} ${arrow ? contentStyle.content3 : ""}`}>
       <div className="container">
       <div className="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 className="h3 mb-0 text-gray-800">Dashboard</h1>
