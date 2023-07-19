@@ -1,10 +1,9 @@
-import { useState } from "react";
 import headerStyles from "./header.module.css"
 
 const Header = ({toggleSidebar, isVisible, arrow}) => {
 
     return (
-      <nav className={`${headerStyles .whiteBg} ${isVisible ? headerStyles .whiteBg2 : ""} ${arrow ? headerStyles.whiteBg3 : ""}`}> 
+      <nav className={`${headerStyles.whiteBg} ${isVisible ? headerStyles.whiteBg2 : ""} ${arrow ? headerStyles.whiteBg3 : ""}`}> 
       
                         <div className={headerStyles.search}>
                             <div className={headerStyles.bar} onClick={toggleSidebar}>
