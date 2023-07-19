@@ -157,7 +157,7 @@ const Sidebar = ({ isVisible, handleArrow, arrow}) => {
                   color: "#c1c1c3",
                   position: "relative",
                   top: "4px",
-                  left: "73px",
+                  left: "88px",
                   transform: "rotate(270deg)",
                 }}
               ></i>
