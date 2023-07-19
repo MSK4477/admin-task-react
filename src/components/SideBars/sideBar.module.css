@@ -342,12 +342,14 @@ transition: 0.3s ease-in-out !important;
   .arrow{
     display: none !important;
   }
-  .rocket{
+  .rocket, .rocketbg{
     display: none !important;
-
   }
   
-  
+  .containers{
+    width:100px;
+    height:  calc(100vh + 200rem);
+  }
   .sidebarItem,
   .sidebarItem2,
   .components,
@@ -377,4 +379,9 @@ transition: 0.3s ease-in-out !important;
   }
 
 
+}
+@media screen and (max-width: 466px) {
+  .containers{
+    height:  calc(100vh + 220rem);
+  }
 }
