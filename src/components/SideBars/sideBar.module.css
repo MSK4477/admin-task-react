@@ -13,9 +13,15 @@
   top: 0;
   left: 0;
   width: 230px;
+<<<<<<< HEAD
   height: calc(100vh + 170vh);
   transition: 0.5s ease-in-out;
 }
+
+=======
+  height: calc(100vh + 300vh);
+}
+>>>>>>> e8a451591032954cd7eb4b0ace2df71d6a37badc
 
 
 
