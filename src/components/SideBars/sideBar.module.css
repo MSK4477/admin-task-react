@@ -342,6 +342,10 @@ transition: 0.3s ease-in-out !important;
   .arrow{
     display: none !important;
   }
+  .rocket{
+    display: none !important;
+
+  }
   
   
   .sidebarItem,
