@@ -460,7 +460,7 @@ const Sidebar = ({ isVisible, handleArrow, arrow}) => {
           </a>
         </ul>
          <div  className={sideStyles.arrow} style={{position:"relative",top:"180px",left:"20%"}}>
-        <button  onClick={handleArrow}  className="rounded-circle border-0"  style={{width:"4rem",height:"4rem",backgroundColor:"#6886de"}}> <i className={arrow ? "fa-solid fa-arrow-left" :"fa-solid fa-arrow-right"} style={{color: "#ccc"}}></i></button>
+        <button  onClick={handleArrow}  className="rounded-circle border-0"  style={{width:"4rem",height:"4rem",backgroundColor:"#6886de"}}> <i className={arrow ? "fa-solid fa-arrow-right" :"fa-solid fa-arrow-left"} style={{color: "#ccc"}}></i></button>
         </div>
       
        
