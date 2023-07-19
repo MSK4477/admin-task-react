@@ -464,7 +464,7 @@ const Sidebar = ({ isVisible, handleArrow, arrow}) => {
         </div>
       
        
-        <div  style={ arrow ? {display:"none"} :{ position:"relative" , top:"220px",left:"10px",borderRadius:"8px", padding:"10px",backgroundColor:"#3a5cbf",width:"200px"}}>
+        <div className={sideStyles.rocketbg} style={ arrow ? {display:"none"} :{ position:"relative" , top:"220px",left:"10px",borderRadius:"8px", padding:"10px",backgroundColor:"#3a5cbf",width:"200px"}}>
           <div className={sideStyles.rocket}>
           <img style={{width:"4rem", position:"relative",  left:"4rem"}}  src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_rocket.svg" alt="..."/>
                         <p style={{pdding:"30px",textAlign:"center",color:"#ccc"}}><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>          
